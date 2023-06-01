@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {}
+    "C:\\Pubs\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {
+    "C:\\Pubs\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
+        "projectUniqueName": "C:\\Pubs\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
         "projectName": "Publicaciones.IOC",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
+        "projectPath": "C:\\Pubs\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.IOC\\obj\\",
+        "outputPath": "C:\\Pubs\\Publicaciones.IOC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

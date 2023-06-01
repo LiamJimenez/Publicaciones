@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {}
+    "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
+    "C:\\Pubs\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
+        "projectUniqueName": "C:\\Pubs\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
         "projectName": "Publicaciones.Domain",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
+        "projectPath": "C:\\Pubs\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\obj\\",
+        "outputPath": "C:\\Pubs\\Publicaciones.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
+    "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
         "projectName": "Publicaciones.Infraestructure",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+        "projectPath": "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\obj\\",
+        "outputPath": "C:\\Pubs\\Publicaciones.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
-                "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj"
+              "C:\\Pubs\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
+                "projectPath": "C:\\Pubs\\Publicaciones.Domain\\Publicaciones.Domain.csproj"
               }
             }
           }

@@ -3,7 +3,7 @@ using Publicaciones.Domain.Core;
 
 namespace Publicaciones.Domain.Entities
 {
-    public class Autors : Person 
+    public class Authors : Person 
     {
         public string au_id {  get; set; }
         public string au_Iname { get; set; }

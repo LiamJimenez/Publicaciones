@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
+      "projectUniqueName": "C:\\Pubs\\Publicaciones.Api\\Publicaciones.Api.csproj",
       "projectName": "Publicaciones.Api",
-      "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
+      "projectPath": "C:\\Pubs\\Publicaciones.Api\\Publicaciones.Api.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\obj\\",
+      "outputPath": "C:\\Pubs\\Publicaciones.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

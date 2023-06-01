@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0k3o1wY4rixyIonnIehZkXjOvSpm7k8LtMJv03SS6ZZE84dlNkiNT9fYV64G8i+Ip9KYvgx1IXXNv5PPqX9i/w==",
+  "dgSpecHash": "I8nl1FZX7kJYqe77ZDIHPUSK20CWMnM8ZJNgivy74KJ1kDIl6vyq1jooNMDrTm/wW3JV4FSwGxXUmWMxQKcSgQ==",
   "success": true,
-  "projectFilePath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+  "projectFilePath": "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

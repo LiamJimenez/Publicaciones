@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.web\\Publicaciones.web.csproj",
+      "projectUniqueName": "C:\\Pubs\\Publicaciones.web\\Publicaciones.web.csproj",
       "projectName": "Publicaciones.web",
-      "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.web\\Publicaciones.web.csproj",
+      "projectPath": "C:\\Pubs\\Publicaciones.web\\Publicaciones.web.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.web\\obj\\",
+      "outputPath": "C:\\Pubs\\Publicaciones.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

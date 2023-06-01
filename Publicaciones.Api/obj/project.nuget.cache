@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uzmvWuBSLM3Gp5WBBwL/seUReUzbc0vVz+fYQ5s4uXsulODwTLPaDgFEebon0xMTh3XyMDWxDGAPRG95Co4dKg==",
+  "dgSpecHash": "tvZfvRtja3EtICjBNtzDgZkahGDbaL545W1C8pDfGnUC6cv9cLVXF+i4ahWkqqO59lljCT1eqOWgjEGanAyyhw==",
   "success": true,
-  "projectFilePath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
+  "projectFilePath": "C:\\Pubs\\Publicaciones.Api\\Publicaciones.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
