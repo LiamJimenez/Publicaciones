@@ -15,6 +15,7 @@ namespace Publicaciones.Infraestructure.Context
 
         public DbSet<Authors> Autor { get; set; }
         public DbSet<Sales> Sale { get; set; }
+        public DbSet<titleauthor> titleauthor { get; set; }
         
 
     }
