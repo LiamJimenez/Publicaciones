@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Edinson\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.web\\Publicaciones.web.csproj",
+      "projectUniqueName": "C:\\Publicaciones\\Publicaciones.web\\Publicaciones.web.csproj",
       "projectName": "Publicaciones.web",
-      "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.web\\Publicaciones.web.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.web\\obj\\",
+      "projectPath": "C:\\Publicaciones\\Publicaciones.web\\Publicaciones.web.csproj",
+      "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
+      "outputPath": "C:\\Publicaciones\\Publicaciones.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

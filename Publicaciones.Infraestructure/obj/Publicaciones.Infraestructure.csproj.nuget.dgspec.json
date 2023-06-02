@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {}
+    "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
+    "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
+        "projectUniqueName": "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
         "projectName": "Publicaciones.Domain",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\obj\\",
+        "projectPath": "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
+        "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
+        "outputPath": "C:\\Publicaciones\\Publicaciones.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +59,17 @@
         }
       }
     },
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
+    "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
         "projectName": "Publicaciones.Infraestructure",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Infraestructure\\obj\\",
+        "projectPath": "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
+        "outputPath": "C:\\Publicaciones\\Publicaciones.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,8 +83,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
-                "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj"
+              "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
+                "projectPath": "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj"
               }
             }
           }

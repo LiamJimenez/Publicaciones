@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj": {}
+    "C:\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj": {
+    "C:\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj",
+        "projectUniqueName": "C:\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj",
         "projectName": "Publicaciones.Application",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Application\\obj\\",
+        "projectPath": "C:\\Publicaciones\\Publicaciones.Application\\Publicaciones.Application.csproj",
+        "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
+        "outputPath": "C:\\Publicaciones\\Publicaciones.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

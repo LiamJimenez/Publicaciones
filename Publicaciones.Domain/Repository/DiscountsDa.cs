@@ -1,45 +1,44 @@
 ﻿using Publicaciones.Infraestructure.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Publicaciones.Infraestructure.Core
+namespace Publicaciones.Infraestructure.Repository
 {
-    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
+    public class DiscountsDa : IBaseRepository<DiscountsDa>
     {
-        public bool Exists(Expression<Func<TEntity, bool>> filter)
+        public bool Exists(Expression<Func<DiscountsDa, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<TEntity> GetEntities()
+        public IEnumerable<DiscountsDa> GetEntities()
         {
             throw new NotImplementedException();
         }
 
-        public TEntity GetEntity(int entityid)
+        public DiscountsDa GetEntity(int entityid)
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(TEntity entity)
+        public void Remove(DiscountsDa entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(TEntity entity)
+        public void Save(DiscountsDa entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(TEntity[] entities)
+        public void Save(DiscountsDa[] entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(TEntity entity)
+        public void Update(DiscountsDa entity)
         {
             throw new NotImplementedException();
         }

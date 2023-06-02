@@ -12,5 +12,5 @@ namespace Publicaciones.Domain.Entities
         public string payterms { get; set; }
         public string title_id { get; set; }
     }
-    }
+}
 
