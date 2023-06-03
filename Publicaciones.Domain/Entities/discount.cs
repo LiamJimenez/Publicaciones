@@ -1,6 +1,16 @@
-﻿namespace Publicaciones.Domain.Entities
+﻿using Publicaciones.Domain.Core;
+
+namespace Publicaciones.Domain.Entities
 {
-    internal class discount
+    public class discount : BaseEntity
     {
+        public string DiscountType { get; set; }
+        public char? StorId { get; set; }
+        public short? Lowqty { get; set; }
+        public short? Highqty { get; set; }
+        public decimal Discount { get; set; }
     }
+
+
+
 }

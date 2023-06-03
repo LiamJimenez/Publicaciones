@@ -13,10 +13,15 @@ namespace Publicaciones.Infraestructure.Context
             : base(options) { 
         }
 
-        public DbSet<Authors> Autor { get; set; }
-        public DbSet<Sales> Sale { get; set; }
+        public DbSet<Authors> Authors { get; set; }
+        public DbSet<Sales> Sales { get; set; }
+        public DbSet<discount> discount { get; set; }
         public DbSet<titleauthor> titleauthor { get; set; }
-        
+        public DbSet<Empleoyess> Empleoyess { get; set; }
+        public DbSet<Jobs> Jobs { get; set; }
+        public DbSet<pub_info> pub_info { get; set; }
+        public DbSet<Publishes> Publishes { get; set; }
+
 
     }
 }
