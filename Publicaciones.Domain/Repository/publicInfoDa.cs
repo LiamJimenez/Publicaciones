@@ -6,39 +6,39 @@ using System.Text;
 
 namespace Publicaciones.Domain.Repository
 {
-    internal class pub_infoDa : IBaseRepository<pub_infoDa>
+    internal class publicInfoDa : IBaseRepository<publicInfoDa>
     {
-        public bool Exists(Expression<Func<pub_infoDa, bool>> filter)
+        public bool Exists(Expression<Func<publicInfoDa, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<pub_infoDa> GetEntities()
+        public IEnumerable<publicInfoDa> GetEntities()
         {
             throw new NotImplementedException();
         }
 
-        public pub_infoDa GetEntity(int entityid)
+        public publicInfoDa GetEntity(int entityid)
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(pub_infoDa entity)
+        public void Remove(publicInfoDa entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(pub_infoDa entity)
+        public void Save(publicInfoDa entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(pub_infoDa[] entities)
+        public void Save(publicInfoDa[] entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(pub_infoDa entity)
+        public void Update(publicInfoDa entity)
         {
             throw new NotImplementedException();
         }

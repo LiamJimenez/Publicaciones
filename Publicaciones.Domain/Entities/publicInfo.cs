@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace Publicaciones.Domain.Entities
 {
-    public class pub_info : BaseEntity
+    public class publicInfo : BaseEntity
     {
         public char pub_id {  get; set; }
         public byte[]? Logo { get; set; }
