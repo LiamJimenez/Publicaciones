@@ -1,0 +1,10 @@
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.csproj.AssemblyReference.cache
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.AssemblyInfoInputs.cache
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.AssemblyInfo.cs
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.csproj.CoreCompileInputs.cache
+C:\Pubs\Publicaciones.Domain\bin\Debug\netstandard2.1\Publicaciones.Domain.deps.json
+C:\Pubs\Publicaciones.Domain\bin\Debug\netstandard2.1\Publicaciones.Domain.dll
+C:\Pubs\Publicaciones.Domain\bin\Debug\netstandard2.1\Publicaciones.Domain.pdb
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.dll
+C:\Pubs\Publicaciones.Domain\obj\Debug\netstandard2.1\Publicaciones.Domain.pdb

@@ -1,0 +1,13 @@
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.AssemblyReference.cache
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.AssemblyInfoInputs.cache
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.AssemblyInfo.cs
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Pubs\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.deps.json
+C:\Pubs\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.dll
+C:\Pubs\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.pdb
+C:\Pubs\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Domain.dll
+C:\Pubs\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Domain.pdb
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.CopyComplete
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.dll
+C:\Pubs\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.pdb
