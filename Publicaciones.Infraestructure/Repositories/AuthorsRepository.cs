@@ -38,12 +38,14 @@ namespace Publicaciones.Infraestructure.Repositories
                            select new AuthorsModel()
                           {
                               au_id = au.au_id,
-                              au_Iname = au.au_Iname,
+                              au_lname = au.au_lname,
                               au_fname = au.au_fname,
+                              phone = au.phone,
                               address = au.address,
                               city = au.city,
                               state = au.state,
-                              zip = au.zip
+                              zip = au.zip,
+                              contract = au.contract
 
 
 
