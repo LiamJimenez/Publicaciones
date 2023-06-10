@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Publicaciones.Infraestructure.Repositories
 {
-    internal class AuthorsRepository : BaseRepository<Authors>, IAuthorsRepository
+    public class AuthorsRepository : BaseRepository<Authors>, IAuthorsRepository
     {
         private readonly ILogger<AuthorsRepository> logger;
         private readonly PublicacionesContext context;
@@ -33,16 +33,17 @@ namespace Publicaciones.Infraestructure.Repositories
                 this.logger.LogInformation($"Pase por aqui: {zip}");
 
                 authors = (from au in base.GetEntities()
-                          join de in context.Authors.ToList() on au.zip equals de.zip
-                          where au.zip == zip
-                          select new AuthorsModel()
+                           join de in context.Authors.ToList() on au.zip equals de.zip
+                           where au.zip == zip
+                           select new AuthorsModel()
                           {
+                             
                               au_Iname = au.au_Iname,
                               au_fname = au.au_fname,
                               address = au.address,
                               city = au.city,
                               state = au.state,
-                              zip = au.zip,
+                              zip = au.zip
 
 
 
