@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V7ekWIkNt0/PhvyYGoFFkIPms28BgmawX35K8vkZ5Cbvjr2MMO4HrYX0cOdsn/aIY3KLw9kC2EGelShJDUulRQ==",
+  "dgSpecHash": "zV2484iKe1Z5naZQpzEyW7q3SIn8q0aoiwq83fujm0VITLsLiQSfyNhS2yWxrXiSqayuM26zZiQPCLQFVv9STw==",
   "success": true,
   "projectFilePath": "C:\\Pubs\\Publicaciones.Api\\Publicaciones.Api.csproj",
   "expectedPackageFiles": [
@@ -51,7 +51,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",

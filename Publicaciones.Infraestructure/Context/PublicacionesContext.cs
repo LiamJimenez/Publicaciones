@@ -9,7 +9,7 @@ namespace Publicaciones.Infraestructure.Context
         public PublicacionesContext()
         { 
         }
-        public PublicacionesContext(DbContextOptions<PublicacionesContext> options) 
+        public PublicacionesContext(DbContextOptions<PublicacionesContext> options)
             : base(options) { 
         }
 

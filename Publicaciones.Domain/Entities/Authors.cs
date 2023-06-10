@@ -1,12 +1,15 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Publicaciones.Domain.Core;
 
 namespace Publicaciones.Domain.Entities
 {
-    public class Authors : Person 
+    public class Authors 
     {
-        public string? au_id {  get; set; }
-        public string? au_Iname { get; set; }
+
+        [Key]
+        public char? au_id { get; set; }
+        public string? au_lname { get; set; }
         public string? au_fname { get; set;}
 
         public string address { get; set;}

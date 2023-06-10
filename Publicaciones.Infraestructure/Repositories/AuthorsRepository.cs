@@ -24,20 +24,20 @@ namespace Publicaciones.Infraestructure.Repositories
             this.context = context;
         }
 
-        public List<AuthorsModel> GetAuthorsByzip(int zip)
+        public List<AuthorsModel> GetAuthorsByau_id(int au_id)
         {
             List<AuthorsModel> authors = new List<AuthorsModel>();
 
             try
             {
-                this.logger.LogInformation($"Pase por aqui: {zip}");
+                this.logger.LogInformation($"Pase por aqui: {au_id}");
 
                 authors = (from au in base.GetEntities()
-                           join de in context.Authors.ToList() on au.zip equals de.zip
-                           where au.zip == zip
+                           join de in context.Authors.ToList() on au.au_id equals de.au_id
+                           where au.au_id == au_id
                            select new AuthorsModel()
                           {
-                             
+                              au_id = au.au_id,
                               au_Iname = au.au_Iname,
                               au_fname = au.au_fname,
                               address = au.address,

@@ -9,7 +9,7 @@ namespace Publicaciones.Infraestructure.Interface
 {
     public interface IAuthorsRepository : IBaseRepository<Authors>
     {
-        List<AuthorsModel> GetAuthorsByzip(int zip);
+        List<AuthorsModel> GetAuthorsByau_id(int au_id);
     }
             
 }
