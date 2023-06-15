@@ -1,10 +1,57 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Publicaciones.Infraestructure.Context;
+using Publicaciones.Infraestructure.Repositories;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
+using System.Linq;
 
 namespace Publicaciones.Infraestructure.Core
 {
-    internal class BaseRepository
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
+        private readonly PublicacionesContext publicaciones;
+        private readonly DbSet<TEntity> entities;
+        public BaseRepository(PublicacionesContext publicaciones)
+        {
+            this.publicaciones = publicaciones;
+            this.entities = this.publicaciones.Set<TEntity>();
+        }
+
+        public virtual bool Exists(Expression<Func<TEntity, bool>> filter)
+        {
+            return this.entities.Any(filter);
+        }
+
+        public IEnumerable<TEntity> GetEntities()
+        {
+            throw new NotImplementedException();
+        }
+
+        public TEntity GetEntity(int entityid)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Remove(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save(TEntity[] entities)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
