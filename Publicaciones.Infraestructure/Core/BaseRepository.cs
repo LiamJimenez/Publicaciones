@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
+using System.Text;
+
 namespace Publicaciones.Infraestructure.Core
 {
     public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
