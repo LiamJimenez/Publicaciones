@@ -14,9 +14,13 @@ namespace Publicaciones.Infraestructure.Repositories
 
         void Remove(TEntity entity);
         void Remove(TEntity[] entities);
+
         TEntity GetEntity(int id);
+
         List<TEntity> GetEntities();
+
         bool Exists(Expression<Func<TEntity, bool>> filter);
+
         void SaveChanges();
     }
 }
