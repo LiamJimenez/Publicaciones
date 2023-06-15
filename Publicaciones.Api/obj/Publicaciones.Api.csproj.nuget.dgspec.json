@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj": {}
+    "C:\\Users\\DELL\\Source\\Repos\\LiamJimenez\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj": {
+    "C:\\Users\\DELL\\Source\\Repos\\LiamJimenez\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\LiamJimenez\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
         "projectName": "Publicaciones.Api",
-        "projectPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones\\Publicaciones.Api\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\LiamJimenez\\Publicaciones\\Publicaciones.Api\\Publicaciones.Api.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\LiamJimenez\\Publicaciones\\Publicaciones.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
