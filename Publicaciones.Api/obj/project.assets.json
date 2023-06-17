@@ -1779,6 +1779,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Publicaciones.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Publicaciones.Infraestructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Publicaciones.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Publicaciones.Application.dll": {}
+        }
+      },
       "Publicaciones.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -6109,6 +6122,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Publicaciones.Application/1.0.0": {
+      "type": "project",
+      "path": "../Publicaciones.Application/Publicaciones.Application.csproj",
+      "msbuildProject": "../Publicaciones.Application/Publicaciones.Application.csproj"
+    },
     "Publicaciones.Domain/1.0.0": {
       "type": "project",
       "path": "../Publicaciones.Domain/Publicaciones.Domain.csproj",
@@ -6122,6 +6140,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Publicaciones.Application >= 1.0.0",
       "Publicaciones.Infraestructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -6154,6 +6173,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Pubs\\Publicaciones.Application\\Publicaciones.Application.csproj": {
+              "projectPath": "C:\\Pubs\\Publicaciones.Application\\Publicaciones.Application.csproj"
+            },
             "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
               "projectPath": "C:\\Pubs\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj"
             }

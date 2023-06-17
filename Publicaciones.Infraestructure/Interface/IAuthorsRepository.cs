@@ -9,7 +9,8 @@ namespace Publicaciones.Infraestructure.Interface
 {
     public interface IAuthorsRepository : IBaseRepository<Authors>
     {
-        List<AuthorsModel> GetAuthorsByau_id(int au_id);
+        List<AuthorsModel> GetAuthors();
+        AuthorsModel GetAuthorsByau_id(int id);
     }
             
 }

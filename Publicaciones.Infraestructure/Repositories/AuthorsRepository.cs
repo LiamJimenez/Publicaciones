@@ -18,48 +18,11 @@ namespace Publicaciones.Infraestructure.Repositories
         private readonly PublicacionesContext context;
 
         public AuthorsRepository(ILogger<AuthorsRepository> logger,
-            PublicacionesContext context): base(context) 
+            PublicacionesContext context) : base(context)
         {
             this.logger = logger;
             this.context = context;
         }
-
-        public List<AuthorsModel> GetAuthorsByau_id(int au_id)
-        {
-            List<AuthorsModel> authors = new List<AuthorsModel>();
-
-            try
-            {
-                this.logger.LogInformation($"Pase por aqui: {au_id}");
-
-                authors = (from au in base.GetEntities()
-                           join de in context.Authors.ToList() on au.au_id equals de.au_id
-                           where au.au_id == au_id
-                           select new AuthorsModel()
-                          {
-                              au_id = au.au_id,
-                              au_lname = au.au_lname,
-                              au_fname = au.au_fname,
-                              phone = au.phone,
-                              address = au.address,
-                              city = au.city,
-                              state = au.state,
-                              zip = au.zip,
-                              contract = au.contract
-
-
-
-                          }).ToList();
-
-            }
-            catch (Exception ex)
-            {
-                this.logger.LogError($"Error obeteniendo a los autores: {ex.Message}", ex.ToString());
-            }
-
-            return authors;
-        }
-
         public override void Add(Authors entity)
         {
 
@@ -67,6 +30,114 @@ namespace Publicaciones.Infraestructure.Repositories
                 throw new AuthorsException("El author ya existe.");
 
             base.SaveChanges();
+            base.Add(entity);
         }
+
+        public override void Update(Authors entity)
+        {
+            try
+            {
+                Authors authorsToUpdate = this.GetEntity(entity.au_id);
+
+                authorsToUpdate.au_id = entity.au_id;
+                authorsToUpdate.modifydate = entity.modifydate;
+                authorsToUpdate.au_lname = entity.au_lname;
+                authorsToUpdate.au_fname = entity.au_fname;
+                authorsToUpdate.usermod = entity.usermod;
+                authorsToUpdate.phone = entity.phone;
+                authorsToUpdate.address = entity.address;
+                authorsToUpdate.city = entity.city;
+                authorsToUpdate.state = entity.state;
+                authorsToUpdate.zip = entity.zip;
+                authorsToUpdate.contract = entity.contract;
+
+                this.context.Authors.Update(authorsToUpdate);
+                this.context.SaveChanges();
+            }
+             catch (Exception ex)
+            {
+
+                this.logger.LogError("Error actualizando al author", ex.ToString());
+            }
+        }
+        public override void Remove(Authors entity)
+        {
+            try
+            {
+                Authors authorsToRemove = this.GetEntity(entity.au_id);
+
+                authorsToRemove.deleted = entity.deleted;
+                authorsToRemove.deleteddate = entity.deleteddate;
+                authorsToRemove.userdeleted = entity.userdeleted;
+
+                this.context.Authors.Update(authorsToRemove);
+                this.context.SaveChanges();
+
+            }
+            catch (Exception ex)
+            {
+
+                this.logger.LogError("Error eliminando el departamento", ex.ToString());
+            }
+        }
+
+
+
+        public AuthorsModel GetAuthorsByau_id(int id)
+        {
+            AuthorsModel authorsModel = new AuthorsModel();
+
+
+            try
+            {
+                Authors authors = this.GetEntity(id);
+
+                authorsModel.city = authors.city;
+                authorsModel.au_id = authors.au_id;
+                authorsModel.address = authors.address;
+                authorsModel.au_fname = authors.au_fname;
+                authorsModel.au_lname = authors.au_lname;
+
+            }
+            catch (Exception ex)
+            {
+
+                this.logger.LogError("Error obteniendo el author", ex.ToString());
+            }
+
+            return authorsModel;
+        }
+        public List<AuthorsModel> GetAuthors()
+        {
+
+            List<AuthorsModel> authors = new List<AuthorsModel>();
+
+            try
+            {
+                authors = this.context.Authors
+                                 .Where(cd => !cd.deleted)
+                                 .Select(de => new AuthorsModel()
+                                 {
+                                     city = de.city,
+                                     au_id = de.au_id,
+                                     au_fname = de.au_fname,
+                                     au_lname = de.au_lname,
+                                     address = de.address,
+                                 
+                                 }).ToList();
+            }
+            catch (Exception ex)
+            {
+
+                this.logger.LogError("Error obteniendo los departamentos", ex.ToString());
+            }
+
+            return authors;
+        }
+
     }
 }
+
+
+
+

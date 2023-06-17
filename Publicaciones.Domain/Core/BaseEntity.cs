@@ -2,20 +2,20 @@
 
 namespace Publicaciones.Domain.Core
 {
-
+    
     public abstract class BaseEntity
     {
         public BaseEntity()
         {
-            this.CreationDate = DateTime.Now;
-            this.Deleted = false;
+            this.creationdate = DateTime.Now;
+            this.deleted = false;
         }
-        public int CreationUser { get; set; }
-        public DateTime CreationDate { get; set; }
-        public int? UserMod { get; set; }
-        public DateTime? ModifyDate { get; set; }
-        public int? UserDeleted { get; set; }
-        public DateTime? DeletedDate { get; set; }
-        public bool Deleted { get; set; }
+        public int creationuser { get; set; }
+        public DateTime creationdate { get; set; }
+        public int? usermod { get; set; }
+        public DateTime? modifydate { get; set; }
+        public int? userdeleted { get; set; }
+        public DateTime? deleteddate { get; set; }
+        public bool deleted { get; set; }
     }
 }
