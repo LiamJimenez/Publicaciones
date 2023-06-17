@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Publicaciones.Domain",
-    "\\Publicaciones.Domain\\Entities",
-    "\\Publicaciones.Domain\\obj"
+    "\\Publicaciones.Infraestructure",
+    "\\Publicaciones.Infraestructure\\Model"
   ],
-  "SelectedNode": "\\Publicaciones.Domain\\Entities\\Empleoyees.cs",
   "PreviewInSolutionExplorer": false
 }

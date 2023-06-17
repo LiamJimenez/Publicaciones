@@ -17,7 +17,7 @@ namespace Publicaciones.Infraestructure.Core
 
         public BaseRepository(PublicacionesContext publicaciones)
         {
-            this.publicaciones = publicaciones;
+            this.publicaciones = publicaciones; 
             this.entities = this.publicaciones.Set<TEntity>();
         }
         public virtual bool Exists(Expression<Func<TEntity, bool>> filter)
