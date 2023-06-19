@@ -83,14 +83,14 @@ namespace Publicaciones.Infraestructure.Repositories
 
 
 
-        public AuthorsModel GetAuthorsByau_id(int id)
+        public AuthorsModel GetAuthorsByau_id(string au_id)
         {
             AuthorsModel authorsModel = new AuthorsModel();
 
 
             try
             {
-                Authors authors = this.GetEntity(id);
+                Authors authors = this.GetEntity(au_id);
 
                 authorsModel.city = authors.city;
                 authorsModel.au_id = authors.au_id;

@@ -2,6 +2,8 @@
 using Publicaciones.Application.Dtos.Authors;
 using Publicaciones.Domain.Entities;
 using Publicaciones.Infraestructure.Interface;
+using System;
+using System.Numerics;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,10 +30,10 @@ namespace Publicaciones.Api.Controllers
         }
 
         // GET api/<AuthorsController>/5
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        [HttpGet("{au_id}")]
+        public IActionResult Get(string au_id)
         {
-            var aut = this.authorsRepository.GetAuthorsByau_id(id);
+            var aut = this.authorsRepository.GetAuthorsByau_id(au_id);
             return Ok(aut);
         }
 
@@ -39,20 +41,24 @@ namespace Publicaciones.Api.Controllers
         [HttpPost("Save")]
         public IActionResult Post([FromBody] AuthorsAddDto authorsAdd)
         {
-
+            var datos = authorsAdd;
+            
             this.authorsRepository.Add(new Authors()
             {
                 city = authorsAdd.city,
-                address = authorsAdd.address,
-                modifydate = authorsAdd.ChangeDate,
-                usermod = authorsAdd.ChangeUser,
+                au_id = authorsAdd.au_id,
                 au_fname = authorsAdd.au_fname,
                 au_lname = authorsAdd.au_lname,
+                zip = authorsAdd.zip,
+                contract = authorsAdd.contract,
+                phone = authorsAdd.phone,
+                state = authorsAdd.state,
+                modifydate = authorsAdd.ChangeDate,
                 creationdate = authorsAdd.ChangeDate,
-                creationuser = authorsAdd.ChangeUser,
+                creationuser = authorsAdd.ChangeUser
             });
 
-            return Ok();
+            return Ok(datos);
         }
 
 
@@ -60,6 +66,7 @@ namespace Publicaciones.Api.Controllers
         // PUT api/<AuthorsController>/5
         [HttpPut("Update")]
         public void Put(int id, [FromBody] string value)
+
         {
         }
 

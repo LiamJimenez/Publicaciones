@@ -28,9 +28,9 @@ namespace Publicaciones.Infraestructure.Core
         {
             return this.entities.ToList();
         }
-        public virtual TEntity GetEntity(int id)
+        public virtual TEntity GetEntity(string au_id)
         {
-            return this.entities.Find(id);
+            return this.entities.Find(au_id);
         }
         public virtual void Remove(TEntity entity)
         {
@@ -60,6 +60,11 @@ namespace Publicaciones.Infraestructure.Core
         public virtual void SaveChanges()
         {
             this.publicaciones.SaveChanges();
+        }
+
+        public TEntity GetEntity(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
