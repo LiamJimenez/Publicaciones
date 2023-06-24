@@ -40,6 +40,7 @@ namespace Publicaciones.Infraestructure.Repositories
         {
             try
             {
+                
                 Authors authorsToUpdate = this.GetEntity(entity.au_id);
 
                 authorsToUpdate.au_id = entity.au_id;

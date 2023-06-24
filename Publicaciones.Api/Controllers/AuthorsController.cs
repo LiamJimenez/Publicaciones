@@ -26,6 +26,8 @@ namespace Publicaciones.Api.Controllers
         }
 
 
+
+
         // GET: api/<AuthorsController>
         [HttpGet]
         public IActionResult Get()
@@ -34,6 +36,8 @@ namespace Publicaciones.Api.Controllers
             return Ok(authors);
         }
 
+
+
         // GET api/<AuthorsController>/5
         [HttpGet("{au_id}")]
         public IActionResult Get(string au_id)
@@ -41,6 +45,8 @@ namespace Publicaciones.Api.Controllers
             var aut = this.authorsService.GetByau_id(au_id);
             return Ok(aut);
         }
+
+
 
         // POST api/<AuthorsController>
         [HttpPost("Save")]
@@ -63,6 +69,8 @@ namespace Publicaciones.Api.Controllers
             return Ok(result);
 
         }
+
+
 
         // DELETE api/<AuthorsController>/5
         [HttpDelete("Remove")]

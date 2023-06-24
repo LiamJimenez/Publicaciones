@@ -2,6 +2,7 @@
 using Publicaciones.Application.Contract;
 using Publicaciones.Application.Core;
 using Publicaciones.Application.Dtos.Authors;
+using Publicaciones.Application.Extentions;
 using Publicaciones.Domain.Entities;
 using Publicaciones.Domain.Repository;
 using Publicaciones.Infraestructure.Exceptions;
@@ -74,7 +75,30 @@ namespace Publicaciones.Application.Service
 
         public ServiceResult Remove(AuthorsRemoveDto model)
         {
-            throw new NotImplementedException();
+            ServiceResult result = new ServiceResult();
+
+            try
+            {
+                this.authorsRepository.Remove(new Authors()
+                {
+                    au_id = model.au_id,
+                    deleted = model.deleted,
+                    deleteddate = model.ChangeDate,
+                    userdeleted = model.ChangeUser
+                });
+
+                result.Message = "Author eliminado correctamente.";
+
+            }
+            catch (Exception ex)
+            {
+
+                result.Success = false;
+                result.Message = "Error guardando el departamento.";
+                this.logger.LogError($"{result.Message}", ex.ToString());
+            }
+
+            return result;
         }
 
         public ServiceResult Save(AuthorsAddDto model)
@@ -112,20 +136,9 @@ namespace Publicaciones.Application.Service
 
             try
             {
-                this.authorsRepository.Add(new Authors()
-                {
-                    city = model.city,
-                    au_id = model.au_id,
-                    au_fname = model.au_fname,
-                    au_lname = model.au_lname,
-                    zip = model.zip,
-                    contract = model.contract,
-                    phone = model.phone,
-                    state = model.state,
-                    modifydate = model.ChangeDate,
-                    creationdate = model.ChangeDate,
-                    creationuser = model.ChangeUser
-                });
+                var authors = model.ConvertDtoAddToEntity();
+
+                this.authorsRepository.Add(authors);
 
                 result.Message = "Autor agregado correctamente.";
             }
@@ -151,15 +164,40 @@ namespace Publicaciones.Application.Service
         {
             ServiceResult result = new ServiceResult();
 
-
-
-            this.authorsRepository.Update(new Authors()
+            if (string.IsNullOrEmpty(model.au_lname))
             {
-                
-            });
+                result.Message = "El nombre del autor es requerido.";
+                result.Success = false;
+                return result;
+            }
+
+            if (model.au_lname.Length > 50)
+            {
+                result.Message = "El nombre del autor tiene la logitud invalida.";
+                result.Success = false;
+                return result;
+            }
+
+            try
+            {
+                var authors = model.ConvertDtoUpdateToEntity();
+
+                this.authorsRepository.Update(authors);
+
+                result.Message = "autor actualizado correctamente.";
+            }
+            catch (Exception ex)
+            {
+
+                result.Success = false;
+                result.Message = "Error guardando el autor.";
+                this.logger.LogError($"{result.Message}", ex.ToString());
+            }
+
 
 
             return result;
         }
     }
 }
+
