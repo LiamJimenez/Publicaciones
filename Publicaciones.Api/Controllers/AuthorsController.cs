@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Publicaciones.Application.Contract;
 using Publicaciones.Application.Dtos.Authors;
+using Publicaciones.Application.Service;
 using Publicaciones.Domain.Entities;
+using Publicaciones.Domain.Repository;
 using Publicaciones.Infraestructure.Interface;
 using System;
 using System.Numerics;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,11 +17,12 @@ namespace Publicaciones.Api.Controllers
     [ApiController]
     public class AuthorsController : ControllerBase
     {
-        private readonly IAuthorsRepository authorsRepository;
+        private readonly IAuthorsService authorsService;
 
-        public AuthorsController(IAuthorsRepository authorsRepository) 
+
+        public AuthorsController(IAuthorsService authorsService) 
         {
-            this.authorsRepository = authorsRepository;
+            this.authorsService = authorsService;
         }
 
 
@@ -25,7 +30,7 @@ namespace Publicaciones.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var authors = this.authorsRepository.GetEntities();
+            var authors = this.authorsService.Get();
             return Ok(authors);
         }
 
@@ -33,7 +38,7 @@ namespace Publicaciones.Api.Controllers
         [HttpGet("{au_id}")]
         public IActionResult Get(string au_id)
         {
-            var aut = this.authorsRepository.GetAuthorsByau_id(au_id);
+            var aut = this.authorsService.GetByau_id(au_id);
             return Ok(aut);
         }
 
@@ -41,39 +46,31 @@ namespace Publicaciones.Api.Controllers
         [HttpPost("Save")]
         public IActionResult Post([FromBody] AuthorsAddDto authorsAdd)
         {
-            var datos = authorsAdd;
-            
-            this.authorsRepository.Add(new Authors()
-            {
-                city = authorsAdd.city,
-                au_id = authorsAdd.au_id,
-                au_fname = authorsAdd.au_fname,
-                au_lname = authorsAdd.au_lname,
-                zip = authorsAdd.zip,
-                contract = authorsAdd.contract,
-                phone = authorsAdd.phone,
-                state = authorsAdd.state,
-                modifydate = authorsAdd.ChangeDate,
-                creationdate = authorsAdd.ChangeDate,
-                creationuser = authorsAdd.ChangeUser
-            });
+            var result = this.authorsService.Save(authorsAdd);
 
-            return Ok(datos);
+            return Ok(result);
         }
 
 
 
         // PUT api/<AuthorsController>/5
         [HttpPut("Update")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put([FromBody] AuthorsUpdateDto authorsUpdate)
 
         {
+            var result = this.authorsService.Update(authorsUpdate);
+
+            return Ok(result);
+
         }
 
         // DELETE api/<AuthorsController>/5
         [HttpDelete("Remove")]
-        public void Delete(int id)
+        public IActionResult Delete([FromBody] AuthorsRemoveDto authorsRemove)
         {
+            var result = this.authorsService.Remove(authorsRemove);
+
+            return Ok(result);
         }
     }
 }

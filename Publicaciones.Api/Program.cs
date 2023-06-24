@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Publicaciones.Application.Contract;
+using Publicaciones.Application.Service;
 using Publicaciones.Infraestructure.Context;
 using Publicaciones.Infraestructure.Interface;
 using Publicaciones.Infraestructure.Repositories;
@@ -20,7 +22,7 @@ builder.Services.AddDbContext<PublicacionesContext>(options => options.UseSqlSer
 builder.Services.AddTransient<IAuthorsRepository, AuthorsRepository>();
 
 // Registros de app services //
-
+builder.Services.AddTransient<IAuthorsService, AuthorsService>();
 
 var app = builder.Build();
 
