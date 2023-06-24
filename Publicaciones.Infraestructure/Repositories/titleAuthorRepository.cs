@@ -46,7 +46,7 @@ namespace Publicaciones.Infraestructure.Repositories
                 
                // here i dont put anything
 
-                this.context.titleauthor.Update(authorsToUpdate);
+                this.context.titleauthor.Update(TitleAuthorToUpdate);
                 this.context.SaveChanges();
             }
             catch (Exception ex)
@@ -59,13 +59,13 @@ namespace Publicaciones.Infraestructure.Repositories
         {
             try
             {
-                titleauthor authorsToRemove = this.GetEntity(entity.au_id);
+                titleauthor titleAuthorToRemove = this.GetEntity(entity.au_id);
 
-                authorsToRemove.deleted = entity.deleted;
-                authorsToRemove.deleteddate = entity.deleteddate;
-                authorsToRemove.userdeleted = entity.userdeleted;
+                titleAuthorToRemove.Deleted = entity.Deleted;
+                titleAuthorToRemove.DeletedDate = entity.DeletedDate;
+                titleAuthorToRemove.UserDeleted = entity.UserDeleted;
 
-                this.context.titleauthor.Update(authorsToRemove);
+                this.context.titleauthor.Update(titleAuthorToRemove);
                 this.context.SaveChanges();
 
             }
@@ -85,13 +85,12 @@ namespace Publicaciones.Infraestructure.Repositories
 
             try
             {
-                titleauthor authors = this.GetEntity(au_id);
+                titleauthor TitleAuthor = this.GetEntity(au_id);
 
-                TitleAuthorModel.city = authors.city;
-                TitleAuthorModel.au_id = authors.au_id;
-                TitleAuthorModel.address = authors.address;
-                TitleAuthorModel.au_fname = authors.au_fname;
-                TitleAuthorModel.au_lname = authors.au_lname;
+                TitleAuthorModel.au_id = TitleAuthor.au_id;
+                TitleAuthorModel.title_id = TitleAuthor.title_id;
+                TitleAuthorModel.au_ord = TitleAuthor.au_ord;
+                TitleAuthorModel.royaltyper = TitleAuthor.royaltyper;
 
             }
             catch (Exception ex)
@@ -100,24 +99,24 @@ namespace Publicaciones.Infraestructure.Repositories
                 this.logger.LogError("Error obteniendo el author", ex.ToString());
             }
 
-            return authorsModel;
+            return titleAuthorModel;
         }
-        public List<AuthorsModel> GetAuthors()
+        public List<titleAuthorModel> GettitleAuthor()
         {
 
-            List<AuthorsModel> authors = new List<AuthorsModel>();
+            List<titleAuthorModel> authors = new List<titleAuthorModel>();
 
             try
             {
-                authors = this.context.Authors
-                                 .Where(cd => !cd.deleted)
-                                 .Select(de => new AuthorsModel()
+                authors = this.context.titleauthor
+                                 .Where(cd => !cd.Deleted)
+                                 .Select(de => new titleAuthorModel()
                                  {
-                                     city = de.city,
                                      au_id = de.au_id,
-                                     au_fname = de.au_fname,
-                                     au_lname = de.au_lname,
-                                     address = de.address,
+                                     title_id = de.title_id,
+                                     au_ord = de.au_ord,
+                                     royaltyper = de.royaltyper,
+                                     
 
                                  }).ToList();
             }
@@ -130,6 +129,10 @@ namespace Publicaciones.Infraestructure.Repositories
             return authors;
         }
 
+        public titleAuthorModel GettitleAuthorByau_id(string au_id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
