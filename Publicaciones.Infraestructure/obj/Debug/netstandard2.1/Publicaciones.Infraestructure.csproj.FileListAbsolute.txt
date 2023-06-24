@@ -1,0 +1,5 @@
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.AssemblyInfo.cs
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.CoreCompileInputs.cache
