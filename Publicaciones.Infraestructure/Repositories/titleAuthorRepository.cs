@@ -12,12 +12,12 @@ using System.Text;
 
 namespace Publicaciones.Infraestructure.Repositories
 {
-    public class AuthorsRepository : BaseRepository<titleauthor>, ItitleAuthorRepository
+    public class titleAuthorRepository : BaseRepository<titleauthor>, ItitleAuthorRepository
     {
-        private readonly ILogger<AuthorsRepository> logger;
+        private readonly ILogger<titleAuthorRepository> logger;
         private readonly PublicacionesContext context;
 
-        public AuthorsRepository(ILogger<AuthorsRepository> logger,
+        public titleAuthorRepository(ILogger<titleAuthorRepository> logger,
             PublicacionesContext context) : base(context)
         {
             this.logger = logger;

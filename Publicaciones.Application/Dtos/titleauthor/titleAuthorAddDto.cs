@@ -4,11 +4,8 @@ using System.Text;
 
 namespace Publicaciones.Application.Dtos.titleauthor
 {
-    internal class titleAuthorAddDto 
+    public class TitleAuthorAddDto : titleAuthorDto
     {
-        public class TitleAuthorAddDto : titleAuthorDto 
-        {
 
-        }
     }
 }

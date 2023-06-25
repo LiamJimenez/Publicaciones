@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Publicaciones.Application.Dtos.titleauthor
 {
-    internal class titleAuthorDto : DtoBase
+    public abstract class titleAuthorDto : DtoBase
     {
         public string au_id { get; set; }
         public string title_id { get; set; }
