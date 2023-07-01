@@ -12,8 +12,7 @@ namespace Publicaciones.Application.Dtos.Authors
         public string? city { get; set; }
         public string state { get; set; }
         public string zip { get; set; }
-        public bool? contract { get; set; }
-        public string creationuser { get; set; }
-        public string creationdate { get; set; }
+        
+       
     }
 }

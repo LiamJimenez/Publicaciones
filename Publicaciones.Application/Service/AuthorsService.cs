@@ -4,7 +4,6 @@ using Publicaciones.Application.Core;
 using Publicaciones.Application.Dtos.Authors;
 using Publicaciones.Application.Extentions;
 using Publicaciones.Domain.Entities;
-using Publicaciones.Domain.Repository;
 using Publicaciones.Infraestructure.Exceptions;
 using Publicaciones.Infraestructure.Interface;
 using System;
@@ -105,33 +104,8 @@ namespace Publicaciones.Application.Service
         {
             ServiceResult result = new ServiceResult();
 
-            if (string.IsNullOrEmpty(model.au_fname))
-            {
-                result.Message = "El nombre del autor es requerido.";
-                result.Success = false;
+            if (!model.IsValidAuthors().Success)
                 return result;
-            }
-
-            if (model.au_fname.Length > 50)
-            {
-                result.Message = "El nombre del autor tiene la logitud invalida.";
-                result.Success = false;
-                return result;
-            }
-
-            if (string.IsNullOrEmpty(model.au_lname))
-            {
-                result.Message = "El apellido del autor es requerido.";
-                result.Success = false;
-                return result;
-            }
-
-            if (model.au_lname.Length > 50)
-            {
-                result.Message = "El apellido del autor tiene la logitud invalida.";
-                result.Success = false;
-                return result;
-            }
 
 
             try
@@ -164,19 +138,8 @@ namespace Publicaciones.Application.Service
         {
             ServiceResult result = new ServiceResult();
 
-            if (string.IsNullOrEmpty(model.au_lname))
-            {
-                result.Message = "El nombre del autor es requerido.";
-                result.Success = false;
+            if (!model.IsValidAuthors().Success)
                 return result;
-            }
-
-            if (model.au_lname.Length > 50)
-            {
-                result.Message = "El nombre del autor tiene la logitud invalida.";
-                result.Success = false;
-                return result;
-            }
 
             try
             {

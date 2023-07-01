@@ -41,7 +41,7 @@ namespace Publicaciones.Infraestructure.Repositories
             try
             {
                 
-                Authors authorsToUpdate = this.GetEntity(entity.au_id);
+                Authors authorsToUpdate = base.GetEntity(entity.au_id);
 
                 authorsToUpdate.au_id = entity.au_id;
                 authorsToUpdate.modifydate = entity.modifydate;
@@ -55,8 +55,8 @@ namespace Publicaciones.Infraestructure.Repositories
                 authorsToUpdate.zip = entity.zip;
                 authorsToUpdate.contract = entity.contract;
 
-                this.context.Authors.Update(authorsToUpdate);
-                this.context.SaveChanges();
+                base.Update(authorsToUpdate);
+                base.SaveChanges();
             }
              catch (Exception ex)
             {
@@ -96,12 +96,16 @@ namespace Publicaciones.Infraestructure.Repositories
             {
                 Authors authors = this.GetEntity(au_id);
 
-                authorsModel.city = authors.city;
                 authorsModel.au_id = authors.au_id;
-                authorsModel.address = authors.address;
                 authorsModel.au_fname = authors.au_fname;
                 authorsModel.au_lname = authors.au_lname;
-
+                authorsModel.phone = authors.phone;
+                authorsModel.address = authors.address;
+                authorsModel.city = authors.city;
+                authorsModel.state = authors.state;
+                authorsModel.zip = authors.zip;
+                authorsModel.contract = authors.contract;
+    
             }
             catch (Exception ex)
             {
