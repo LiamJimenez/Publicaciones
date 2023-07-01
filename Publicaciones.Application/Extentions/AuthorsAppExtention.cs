@@ -89,19 +89,21 @@ namespace Publicaciones.Application.Extentions
             {
                 result.Message = "El apellido del autor tiene la logitud invalida.";
                 result.Success = false;
+                return result;
+            }
 
-                if (string.IsNullOrEmpty(model.city))
+            if (string.IsNullOrEmpty(model.city))
                 {
-                    result.Message = "La ciudad del autor es requerido.";
-                    result.Success = false;
-                    return result;
+                 result.Message = "La ciudad del autor es requerido.";
+                 result.Success = false;
+                 return result;
                 }
 
-                if (model.city.Length > 50)
+            if (model.city.Length > 50)
                 {
-                    result.Message = "La ciudad del autor tiene la logitud invalida.";
-                    result.Success = false;
-                    return result;
+                  result.Message = "La ciudad del autor tiene la logitud invalida.";
+                  result.Success = false;
+                  return result;
                 }
 
                 if (string.IsNullOrEmpty(model.zip))
@@ -150,4 +152,4 @@ namespace Publicaciones.Application.Extentions
             }
         }
     }
-}
+

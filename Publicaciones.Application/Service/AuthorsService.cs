@@ -153,7 +153,7 @@ namespace Publicaciones.Application.Service
             {
 
                 result.Success = false;
-                result.Message = "Error guardando el autor.";
+                result.Message = "Error actualizando el autor.";
                 this.logger.LogError($"{result.Message}", ex.ToString());
             }
 
