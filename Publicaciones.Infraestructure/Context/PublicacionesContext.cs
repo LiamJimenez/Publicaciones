@@ -15,6 +15,6 @@ namespace Publicaciones.Infraestructure.Context
         }
 
         public DbSet<Sales> Sales { get; set; }
-        public DbSet<discount> Discounts { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
     }
 }

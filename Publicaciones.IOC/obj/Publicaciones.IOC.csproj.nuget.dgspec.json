@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {}
+    "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {
+    "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
+        "projectUniqueName": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
         "projectName": "Publicaciones.IOC",
-        "projectPath": "C:\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
-        "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones.IOC\\obj\\",
+        "projectPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.IOC\\Publicaciones.IOC.csproj",
+        "packagesPath": "C:\\Users\\MAY999\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.IOC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAY999\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

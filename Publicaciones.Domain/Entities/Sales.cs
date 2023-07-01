@@ -5,7 +5,7 @@ namespace Publicaciones.Domain.Entities
 {
     public class Sales : BaseEntity
     { 
-        public char stor_id { get; set; }
+        public string stor_id { get; set; }
         public string ord_num { get; set; }
         public DateTime ord_date { get; set; }
         public short qty { get; set; }

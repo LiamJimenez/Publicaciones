@@ -7,17 +7,27 @@ namespace Publicaciones.Infraestructure.Repository
 {
     internal class SalesDa : IBaseRepository<SalesDa>
     {
+        public void Add(SalesDa entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(SalesDa[] entities)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Exists(Expression<Func<SalesDa, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<SalesDa> GetEntities()
+        public List<SalesDa> GetEntities()
         {
             throw new NotImplementedException();
         }
 
-        public SalesDa GetEntity(int entityid)
+        public SalesDa GetEntity(int id)
         {
             throw new NotImplementedException();
         }
@@ -27,17 +37,22 @@ namespace Publicaciones.Infraestructure.Repository
             throw new NotImplementedException();
         }
 
-        public void Save(SalesDa entity)
+        public void Remove(SalesDa[] entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(SalesDa[] entities)
+        public void SaveChanges()
         {
             throw new NotImplementedException();
         }
 
         public void Update(SalesDa entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(SalesDa[] entities)
         {
             throw new NotImplementedException();
         }

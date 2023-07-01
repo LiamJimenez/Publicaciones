@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {}
+    "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
+    "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
         "projectName": "Publicaciones.Domain",
-        "projectPath": "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
-        "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones.Domain\\obj\\",
+        "projectPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj",
+        "packagesPath": "C:\\Users\\MAY999\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAY999\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,17 +64,21 @@
         }
       }
     },
-    "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
+    "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
         "projectName": "Publicaciones.Infraestructure",
-        "projectPath": "C:\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\Edinson\\.nuget\\packages\\",
-        "outputPath": "C:\\Publicaciones\\Publicaciones.Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\MAY999\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Edinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAY999\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,14 +86,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
-                "projectPath": "C:\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj"
+              "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj": {
+                "projectPath": "C:\\Users\\MAY999\\source\\repos\\Publicaciones\\Publicaciones.Domain\\Publicaciones.Domain.csproj"
               }
             }
           }

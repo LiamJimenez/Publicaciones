@@ -8,17 +8,27 @@ namespace Publicaciones.Infraestructure.Repository
 {
     public class DiscountsDa : IBaseRepository<DiscountsDa>
     {
+        public void Add(DiscountsDa entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(DiscountsDa[] entities)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Exists(Expression<Func<DiscountsDa, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<DiscountsDa> GetEntities()
+        public List<DiscountsDa> GetEntities()
         {
             throw new NotImplementedException();
         }
 
-        public DiscountsDa GetEntity(int entityid)
+        public DiscountsDa GetEntity(int id)
         {
             throw new NotImplementedException();
         }
@@ -28,17 +38,22 @@ namespace Publicaciones.Infraestructure.Repository
             throw new NotImplementedException();
         }
 
-        public void Save(DiscountsDa entity)
+        public void Remove(DiscountsDa[] entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(DiscountsDa[] entities)
+        public void SaveChanges()
         {
             throw new NotImplementedException();
         }
 
         public void Update(DiscountsDa entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(DiscountsDa[] entities)
         {
             throw new NotImplementedException();
         }
