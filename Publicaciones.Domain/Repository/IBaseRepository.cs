@@ -14,7 +14,7 @@ namespace Publicaciones.Infraestructure.Repositories
 
         void Remove(TEntity entity);
         void Remove(TEntity[] entities);
-        TEntity GetEntity(int id);
+        TEntity GetEntity(string au_id);
         List<TEntity> GetEntities();
         bool Exists(Expression<Func<TEntity, bool>> filter);
 

@@ -7,9 +7,62 @@ namespace Publicaciones.Application.Extentions
 {
     public static class AuthorsAppExtention
     {
+
+            public static Authors ConvertDtoAddToEntity(this AuthorsAddDto authorsAddDto)
+            {
+                return new Authors()
+                {
+
+                    au_id = authorsAddDto.au_id,
+                    au_fname = authorsAddDto.au_fname,
+                    au_lname = authorsAddDto.au_lname,
+                    city = authorsAddDto.city,
+                    zip = authorsAddDto.zip,
+                    phone = authorsAddDto.phone,
+                    state = authorsAddDto.state,
+                    modifydate = authorsAddDto.ChangeDate,
+                    creationdate = authorsAddDto.ChangeDate,
+                    creationuser = authorsAddDto.ChangeUser
+
+                };
+            }
+
+            public static Authors ConvertDtoUpdateToEntity(this AuthorsUpdateDto authorsUpdateDto)
+            {
+                return new Authors()
+                {
+                    
+                    au_id = authorsUpdateDto.au_id,
+                    au_fname = authorsUpdateDto.au_fname,
+                    au_lname = authorsUpdateDto.au_lname,
+                    city = authorsUpdateDto.city,
+                    zip = authorsUpdateDto.zip,
+                    phone = authorsUpdateDto.phone,
+                    state = authorsUpdateDto.state,
+                    modifydate = authorsUpdateDto.ChangeDate,
+                    creationdate = authorsUpdateDto.ChangeDate,
+                    creationuser = authorsUpdateDto.ChangeUser
+
+                };
+            }
+
         public static ServiceResult IsValidAuthors(this AuthorsDto model)
         {
             ServiceResult result = new ServiceResult();
+
+            if (string.IsNullOrEmpty(model.au_id))
+            {
+                result.Message = "El id del autor es requerido.";
+                result.Success = false;
+                return result;
+            }
+
+            if (model.au_id.Length > 50)
+            {
+                result.Message = "El id del autor tiene la logitud invalida.";
+                result.Success = false;
+                return result;
+            }
 
             if (string.IsNullOrEmpty(model.au_fname))
             {
@@ -93,46 +146,7 @@ namespace Publicaciones.Application.Extentions
                     return result;
                 }
 
-
                 return result;
-            }
-
-            public static Authors ConvertDtoAddToEntity(this AuthorsAddDto authorsAddDto)
-            {
-                return new Authors()
-                {
-
-                    au_id = authorsAddDto.au_id,
-                    au_fname = authorsAddDto.au_fname,
-                    au_lname = authorsAddDto.au_lname,
-                    city = authorsAddDto.city,
-                    zip = authorsAddDto.zip,
-                    phone = authorsAddDto.phone,
-                    state = authorsAddDto.state,
-                    modifydate = authorsAddDto.ChangeDate,
-                    creationdate = authorsAddDto.ChangeDate,
-                    creationuser = authorsAddDto.ChangeUser
-
-                };
-            }
-
-            public static Authors ConvertDtoUpdateToEntity(this AuthorsUpdateDto authorsUpdateDto)
-            {
-                return new Authors()
-                {
-                    
-                    au_id = authorsUpdateDto.au_id,
-                    au_fname = authorsUpdateDto.au_fname,
-                    au_lname = authorsUpdateDto.au_lname,
-                    city = authorsUpdateDto.city,
-                    zip = authorsUpdateDto.zip,
-                    phone = authorsUpdateDto.phone,
-                    state = authorsUpdateDto.state,
-                    modifydate = authorsUpdateDto.ChangeDate,
-                    creationdate = authorsUpdateDto.ChangeDate,
-                    creationuser = authorsUpdateDto.ChangeUser
-
-                };
             }
         }
     }

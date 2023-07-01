@@ -106,7 +106,7 @@ namespace Publicaciones.Application.Service
 
             if (!model.IsValidAuthors().Success)
                 return result;
-
+            
 
             try
             {
