@@ -135,13 +135,12 @@ namespace Publicaciones.Application.Service
 
                 try
                 {
-                    var TitleAuthors = model.ConvertDtoAddToEntity();
+                  var TitleAuthors = model.ConvertDtoAddToEntity();
 
-                this.TitleAuthorRepository.Add(TitleAuthors);
-);
+                  this.TitleAuthorRepository.Add(TitleAuthors);
 
-                    result.Message = "titeauthors agregado correctamente.";
-                }
+                  result.Message = "titeauthors agregado correctamente.";
+            }
                 catch (titleAuthorException dex)
                 {
                     result.Success = false;
@@ -160,7 +159,12 @@ namespace Publicaciones.Application.Service
                 return result;
             }
 
-            public ServiceResult Update(titleAuthorUpdateDto model)
+        //public ServiceResult Save(TitleAuthorAddDto model)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public ServiceResult Update(titleAuthorUpdateDto model)
             {
                 ServiceResult result = new ServiceResult();
 

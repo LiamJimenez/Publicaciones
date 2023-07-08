@@ -3,8 +3,8 @@ using Publicaciones.Application.Dtos.titleauthor;
 
 namespace Publicaciones.Application.Contract
 {
-    public interface ITitleAuthorService : IBaseService<titleAuthorAddDto, titleAuthorUpdateDto, titleAuthorRemoveDto>
+    public interface ITitleAuthorService : IBaseService<TitleAuthorAddDto, titleAuthorUpdateDto, titleAuthorRemoveDto>
     {
-
+        //ServiceResult Save(TitleAuthorAddDto model);
     }
 }

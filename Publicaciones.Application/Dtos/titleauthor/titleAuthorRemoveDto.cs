@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Publicaciones.Application.Dtos.titleauthor
 {
-    public class titleAuthorUpdateDto : titleAuthorDto
+    public class titleAuthorRemoveDto : DtoBase
     {
         public string au_id { get; set; }
+        public bool Deleted { get; set; }
+
     }
 }

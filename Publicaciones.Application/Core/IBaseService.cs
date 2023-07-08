@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Publicaciones.Application.Dtos.titleauthor;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,5 +12,6 @@ namespace Publicaciones.Application.Core
         ServiceResult Save(TDtoAdd model);
         ServiceResult Update(TDtoMod model);
         ServiceResult Remove(TDtoRem model);
+        //ServiceResult Save(TitleAuthorAddDto model);
     }
 }
