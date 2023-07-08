@@ -7,7 +7,7 @@ namespace Publicaciones.Domain.Entities
     public class Empleoyess: BaseEntity
     {
         
-        public char emp_id {get; set;}
+        public char emp_id {get; set; }
         public string fname {get; set;}
         public char? minit {get; set;}
         public string lname {get; set;}

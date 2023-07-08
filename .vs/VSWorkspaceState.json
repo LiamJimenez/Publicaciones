@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Publicaciones.Api",
+    "\\Publicaciones.Domain",
+    "\\Publicaciones.Domain\\Entities",
     "\\Publicaciones.Infraestructure",
-    "\\Publicaciones.Infraestructure\\Model"
+    "\\Publicaciones.Infraestructure\\Core",
+    "\\Publicaciones.Infraestructure\\Interfaces",
+    "\\Publicaciones.Infraestructure\\Model",
+    "\\Publicaciones.Infraestructure\\Repositories"
   ],
+  "SelectedNode": "\\Publicaciones.Infraestructure\\Publicaciones.Infraestructure.csproj",
   "PreviewInSolutionExplorer": false
 }
