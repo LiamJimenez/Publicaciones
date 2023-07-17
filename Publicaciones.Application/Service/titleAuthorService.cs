@@ -177,7 +177,7 @@ namespace Publicaciones.Application.Service
 
                 if (model.title_id.Length > 50)
                 {
-                    result.Message = "El nombre del autor tiene la logitud invalida.";
+                    result.Message = "El nombre del TitleAuthor tiene la logitud invalida.";
                     result.Success = false;
                     return result;
                 }
@@ -188,13 +188,13 @@ namespace Publicaciones.Application.Service
 
                     this.TitleAuthorRepository.Update(TITLEAuthors);
 
-                    result.Message = "autor actualizado correctamente.";
+                    result.Message = "TitleAuthor actualizado correctamente.";
                 }
                 catch (Exception ex)
                 {
 
                     result.Success = false;
-                    result.Message = "Error guardando el autor.";
+                    result.Message = "Error guardando el TitleAuthor.";
                     this.logger.LogError($"{result.Message}", ex.ToString());
                 }
 
@@ -208,4 +208,4 @@ namespace Publicaciones.Application.Service
             throw new NotImplementedException();
         }
     }
-    }
+}
