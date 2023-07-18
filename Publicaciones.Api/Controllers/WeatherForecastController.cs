@@ -1,33 +1,66 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Runtime.Intrinsics.Arm;
+using Publicaciones.Application.Contract;
+using Publicaciones.Application.Dtos.titleauthor;
+
+
 
 namespace Publicaciones.Api.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[Controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] sumaries = new[]
-        {
-             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ITitleAuthorService tileAuthortService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ITitleAuthorService tileAuthortService)
         {
-            _logger = logger;
+            this.tileAuthortService = tileAuthortService;
         }
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get() 
+
+        [HttpGet]
+        public IActionResult Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = sumaries[Random.Shared.Next(sumaries.Length)]
-            })
-            .ToArray();
-        } 
+            var title = this.tileAuthortService.Get();
+            return Ok(title);
+        }
+
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var titleAth = this.tileAuthortService.GetById(id);
+            return Ok(titleAth);
+        }
+
+
+        [HttpPost("Save")]
+        public IActionResult Post([FromBody] TitleAuthorAddDto titleAuthorAdd)
+        {
+
+            var result = this.tileAuthortService.Save(titleAuthorAdd);
+
+            return Ok(result);
+        }
+
+
+        [HttpPost("Update")]
+        public IActionResult Put([FromBody] titleAuthorUpdateDto titleAuthortUpdate)
+        {
+
+
+            var result = this.tileAuthortService.Update(titleAuthortUpdate);
+
+            return Ok(result);
+        }
+
+
+        [HttpPost("Remove")]
+        public IActionResult Delete([FromBody] titleAuthorRemoveDto titleAuthortRemoveDto)
+        {
+
+            var result = this.tileAuthortService.Remove(titleAuthortRemoveDto);
+            return Ok(result);
+        }
     }
 }
