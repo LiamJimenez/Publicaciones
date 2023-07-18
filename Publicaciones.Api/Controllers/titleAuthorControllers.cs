@@ -25,7 +25,7 @@ namespace Publicaciones.Api.Controllers
 
 
 
-        // GET: api/<AuthorsController>
+        // GET: api/<TilteAuthorController>
         [HttpGet]
         public IActionResult Get()
         {
@@ -35,7 +35,7 @@ namespace Publicaciones.Api.Controllers
 
 
 
-        // GET api/<AuthorsController>/5
+        // GET api/<TilteAuthorController>/5
         [HttpGet("{au_id}")]
         public IActionResult Get(string au_id)
         {
@@ -45,7 +45,7 @@ namespace Publicaciones.Api.Controllers
 
 
 
-        // POST api/<AuthorsController>
+        // POST api/<TilteAuthorController>
         [HttpPost("Save")]
         public IActionResult Post([FromBody] TitleAuthorAddDto TitleauthorsAdd)
         {
@@ -56,7 +56,7 @@ namespace Publicaciones.Api.Controllers
 
 
 
-        // PUT api/<AuthorsController>/5
+        // PUT api/<TilteAuthorController>/5
         [HttpPut("Update")]
         public IActionResult Put([FromBody] titleAuthorUpdateDto TilleauthorsUpdate)
 
@@ -69,7 +69,7 @@ namespace Publicaciones.Api.Controllers
 
 
 
-        // DELETE api/<AuthorsController>/5
+        // DELETE api/<TilteAuthorController>/5
         [HttpDelete("Remove")]
         public IActionResult Delete([FromBody] titleAuthorRemoveDto TileauthorsRemove)
         {
