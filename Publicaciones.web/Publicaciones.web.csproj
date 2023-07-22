@@ -11,8 +11,4 @@
     <ProjectReference Include="..\Publicaciones.IOC\Publicaciones.IOC.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Authors\" />
-  </ItemGroup>
-
 </Project>
