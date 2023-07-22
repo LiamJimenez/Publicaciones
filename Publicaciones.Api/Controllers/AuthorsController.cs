@@ -1,12 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Publicaciones.Application.Contract;
 using Publicaciones.Application.Dtos.Authors;
-using Publicaciones.Application.Service;
-using Publicaciones.Domain.Entities;
-using Publicaciones.Domain.Repository;
-using Publicaciones.Infraestructure.Interface;
-using System;
-using System.Numerics;
+
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

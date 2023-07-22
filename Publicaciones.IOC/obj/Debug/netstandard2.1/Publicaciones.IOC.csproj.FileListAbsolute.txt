@@ -1,0 +1,10 @@
+C:\Pubs\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.IOC.deps.json
+C:\Pubs\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.IOC.dll
+C:\Pubs\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.IOC.pdb
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.csproj.AssemblyReference.cache
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.AssemblyInfoInputs.cache
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.AssemblyInfo.cs
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.csproj.CoreCompileInputs.cache
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.dll
+C:\Pubs\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.pdb

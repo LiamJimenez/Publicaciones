@@ -53,7 +53,7 @@ namespace Publicaciones.Infraestructure.Repositories
                 authorsToUpdate.city = entity.city;
                 authorsToUpdate.state = entity.state;
                 authorsToUpdate.zip = entity.zip;
-                authorsToUpdate.contract = entity.contract;
+                
 
                 base.Update(authorsToUpdate);
                 base.SaveChanges();

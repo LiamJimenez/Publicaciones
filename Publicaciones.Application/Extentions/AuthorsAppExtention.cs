@@ -33,15 +33,18 @@ namespace Publicaciones.Application.Extentions
                 {
                     
                     au_id = authorsUpdateDto.au_id,
+                    modifydate = authorsUpdateDto.ChangeDate,
                     au_fname = authorsUpdateDto.au_fname,
                     au_lname = authorsUpdateDto.au_lname,
-                    city = authorsUpdateDto.city,
-                    zip = authorsUpdateDto.zip,
                     phone = authorsUpdateDto.phone,
+                    address = authorsUpdateDto.address,
+                    city = authorsUpdateDto.city,
                     state = authorsUpdateDto.state,
-                    modifydate = authorsUpdateDto.ChangeDate,
-                    creationdate = authorsUpdateDto.ChangeDate,
-                    creationuser = authorsUpdateDto.ChangeUser
+                    zip = authorsUpdateDto.zip,
+                    usermod = authorsUpdateDto.ChangeUser,
+
+
+
 
                 };
             }
