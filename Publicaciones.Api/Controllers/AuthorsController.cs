@@ -15,7 +15,7 @@ namespace Publicaciones.Api.Controllers
         private readonly IAuthorsService authorsService;
 
 
-        public AuthorsController(IAuthorsService authorsService) 
+        public AuthorsController(IAuthorsService authorsService)
         {
             this.authorsService = authorsService;
         }

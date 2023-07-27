@@ -1,75 +1,78 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Publicaciones.Application.Contract;
-using Publicaciones.Infraestructure.Models;
+using Newtonsoft.Json;
 using Publicaciones.Application.Dtos.Authors;
+using Publicaciones.web.Models.Responses;
+using System.Text;
 
-namespace Publicaciones.web.Controllers
+namespace School.Web.Controllers
 {
     public class AuthorsController : Controller
-
     {
-        private readonly IAuthorsService authorsService;
-
-        public AuthorsController(IAuthorsService authorsService)
+        HttpClientHandler httpClientHandler = new HttpClientHandler();
+        public AuthorsController(IConfiguration configuration)
         {
-            this.authorsService = authorsService;
+            this.httpClientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyError) => { return true; };
+
         }
         // GET: AuthorsController
         public ActionResult Index()
         {
+            AuthorsListResponse authorReponse = new AuthorsListResponse();
 
-            var result = authorsService.Get();
+            using (var httpClient = new HttpClient(this.httpClientHandler))
+            {
 
-            if (!result.Success)
-                ViewBag.Message = result.Message;
+                using (var response = httpClient.GetAsync("http://localhost:5008/api/Authors").Result)
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        authorReponse = JsonConvert.DeserializeObject<AuthorsListResponse>(apiResponse);
+                    }
 
-            var authors = (List<AuthorsModel>)result.Data;
 
-            return View(authors);
-
+                }
+            }
+            return View(authorReponse.data);
         }
 
-        // GET: AuthorsController/Details/5
+        // GET: AuthorController/Details/5
         public ActionResult Details(string au_id)
         {
-            var result = authorsService.GetByau_id(au_id);
+            AuthorsDetailResponse authorDetailResponse = new AuthorsDetailResponse();
 
-            if (!result.Success)
-                ViewBag.Message = result.Message;
+            using (var httpClient = new HttpClient(this.httpClientHandler))
+            {
+
+                using (var response = httpClient.GetAsync("http://localhost:5008/api/Authors?au_id=" + au_id).Result)
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        authorDetailResponse = JsonConvert.DeserializeObject<AuthorsDetailResponse>(apiResponse);
+                    }
 
 
-            var authors = (AuthorsModel)result.Data;
-
-            return View(authors);
+                }
+            }
+            return View(authorDetailResponse.data);
         }
 
-        // GET: AuthorsController/Create
+        // GET: AuthorController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: AuthorsController/Create
+        // POST: AuthorController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(AuthorsAddDto authorsAddDto)
+        public ActionResult Create(IFormCollection collection)
         {
             try
             {
-
-                var result = this.authorsService.Save(authorsAddDto);
-
-
-                if (!result.Success)
-                {
-                    ViewBag.Message = result.Message;
-                    return View();
-                }
-
-
                 return RedirectToAction(nameof(Index));
-
             }
             catch
             {
@@ -77,36 +80,53 @@ namespace Publicaciones.web.Controllers
             }
         }
 
-        // GET: AuthorsController/Edit/5
+        // GET: AuthorController/Edit/5
         public ActionResult Edit(string au_id)
         {
-            var result = authorsService.GetByau_id(au_id);
+            AuthorsDetailResponse authorDetailResponse = new AuthorsDetailResponse();
 
-            if (!result.Success)
-                ViewBag.Message = result.Message;
+            using (var httpClient = new HttpClient(this.httpClientHandler))
+            {
+
+                using (var response = httpClient.GetAsync("http://localhost:5008/api/Authors?au_id=" + au_id).Result)
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        authorDetailResponse = JsonConvert.DeserializeObject<AuthorsDetailResponse>(apiResponse);
+                    }
 
 
-            var authors = (AuthorsModel)result.Data;
-
-            return View(authors);
+                }
+            }
+            return View(authorDetailResponse.data);
         }
 
-        // POST: AuthorsController/Edit/5
+        // POST: AuthorController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(AuthorsUpdateDto authorsUpdateDto)
         {
             try
             {
-                var result = this.authorsService.Update(authorsUpdateDto);
+
+                var AthorsUpdateDto = new AuthorsUpdateDto();
 
 
-                if (!result.Success)
+
+                using (var httpClient = new HttpClient(this.httpClientHandler))
                 {
-                    ViewBag.Message = result.Message;
-                    return View();
-                }
 
+
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(authorsUpdateDto), Encoding.UTF8, "application/json");
+
+                    using (var response = httpClient.PostAsync("http://localhost:5008/api/Authors/Update", content).Result)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+
+                        var result = JsonConvert.DeserializeObject<AuthorsUpdateDto>(apiResponse);
+                    }
+                }
 
                 return RedirectToAction(nameof(Index));
             }

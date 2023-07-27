@@ -1,4 +1,4 @@
-﻿﻿@model IEnumerable<Publicaciones.Infrastructure.Models.AuthorstModel>
+﻿@model IEnumerable<Publicaciones.web.Models.AuthorModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -60,30 +60,9 @@
                 <td>
                     @Html.ActionLink("Edit", "Edit", new {  id=item.au_id  }) |
                     @Html.ActionLink("Details", "Details", new {  id=item.au_id  }) |
-                 </td>
+                    @Html.ActionLink("Delete", "Delete", new {  id=item.au_id })
+                </td>
             </tr>
         }
     </tbody>
 </table>
-        // GET: Index/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Index/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-    }
-}
