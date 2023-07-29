@@ -6,6 +6,6 @@ namespace Publicaciones.Application.Dtos.titleauthor
 {
     public class titleAuthorUpdateDto : titleAuthorDto
     {
-        public string au_id { get; set; }
+        public int au_id { get; set; }
     }
 }

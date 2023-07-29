@@ -1,9 +1,7 @@
 ﻿using Publicaciones.Application.Core;
 using Publicaciones.Application.Dtos.titleauthor;
 using Publicaciones.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Publicaciones.Application.Extentions
 {
@@ -40,14 +38,14 @@ namespace Publicaciones.Application.Extentions
         {
             ServiceResult result = new ServiceResult();
 
-            if (string.IsNullOrEmpty(model.au_id))
-            {
-                result.Message = "El id del titleAuthor es requerido.";
-                result.Success = false;
-                return result;
-            }
+            //if (model.au_id == 0)
+            //{
+            //    result.Message = "El id del titleAuthor es requerido.";
+            //    result.Success = false;
+            //    return result;
+            //}
 
-            if (model.au_id.Length > 50)
+            if (model.au_id > 50)
             {
                 result.Message = "El id del titleAuthor tiene la logitud invalida.";
                 result.Success = false;

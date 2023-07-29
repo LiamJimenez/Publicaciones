@@ -1,0 +1,48 @@
+﻿@model Publicaciones.Infraestructure.Models.titleAuthorModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Titleauthor</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="au_id" class="control-label"></label>
+                <input asp-for="au_id" class="form-control" />
+                <span asp-validation-for="au_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="title_id" class="control-label"></label>
+                <input asp-for="title_id" class="form-control" />
+                <span asp-validation-for="title_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="au_ord" class="control-label"></label>
+                <input asp-for="au_ord" class="form-control" />
+                <span asp-validation-for="au_ord" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="royaltyper" class="control-label"></label>
+                <input asp-for="royaltyper" class="form-control" />
+                <span asp-validation-for="royaltyper" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

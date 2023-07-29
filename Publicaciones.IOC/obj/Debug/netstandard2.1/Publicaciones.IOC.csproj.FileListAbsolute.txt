@@ -1,0 +1,15 @@
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.IOC.deps.json
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.IOC.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.IOC.pdb
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.csproj.AssemblyReference.cache
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.AssemblyInfoInputs.cache
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.AssemblyInfo.cs
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.csproj.CoreCompileInputs.cache
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.pdb
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.Domain.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.pdb
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\bin\Debug\netstandard2.1\Publicaciones.Domain.pdb
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.IOC\obj\Debug\netstandard2.1\Publicaciones.IOC.csproj.CopyComplete

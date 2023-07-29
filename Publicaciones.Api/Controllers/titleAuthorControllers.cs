@@ -37,7 +37,7 @@ namespace Publicaciones.Api.Controllers
 
         // GET api/<TilteAuthorController>/5
         [HttpGet("{au_id}")]
-        public IActionResult Get(string au_id)
+        public IActionResult Get(int au_id)
         {
             var aut = this.TillEauthorsService.GetByau_id(au_id);
             return Ok(aut);

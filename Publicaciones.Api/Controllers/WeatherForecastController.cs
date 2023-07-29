@@ -29,7 +29,7 @@ namespace Publicaciones.Api.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var titleAth = this.tileAuthortService.GetById(id);
+            var titleAth = this.tileAuthortService.GetByau_id(id);
             return Ok(titleAth);
         }
 

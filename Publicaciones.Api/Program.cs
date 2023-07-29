@@ -4,7 +4,7 @@ using Publicaciones.Application.Service;
 using Publicaciones.Infraestructure.Context;
 using Publicaciones.Infraestructure.Interface;
 using Publicaciones.Infraestructure.Repositories;
-using System.Runtime.CompilerServices;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +22,7 @@ builder.Services.AddDbContext<PublicacionesContext>(options => options.UseSqlSer
 builder.Services.AddTransient<ItitleAuthorRepository, titleAuthorRepository>();
 
 // Registros de app services //
+
 builder.Services.AddTransient<ITitleAuthorService, titleAuthorService>();
 
 var app = builder.Build();

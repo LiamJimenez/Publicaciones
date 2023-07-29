@@ -3,3 +3,11 @@ C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\
 C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.AssemblyInfoInputs.cache
 C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.AssemblyInfo.cs
 C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.deps.json
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Infraestructure.pdb
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Domain.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\bin\Debug\netstandard2.1\Publicaciones.Domain.pdb
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.csproj.CopyComplete
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.dll
+C:\Users\default.DESKTOP-BO5QRCC\Desktop\main\Publicaciones.Infraestructure\obj\Debug\netstandard2.1\Publicaciones.Infraestructure.pdb

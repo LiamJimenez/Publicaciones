@@ -6,6 +6,6 @@ namespace Publicaciones.Application.Contract
     public interface ITitleAuthorService : IBaseService<TitleAuthorAddDto, titleAuthorUpdateDto, titleAuthorRemoveDto>
     {
         //ServiceResult Save(TitleAuthorAddDto model);
-        object GetById(int id);
+        //object GetById(int id);
     }
 }

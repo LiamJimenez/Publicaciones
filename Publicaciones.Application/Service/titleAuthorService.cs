@@ -5,8 +5,10 @@ using Publicaciones.Application.Dtos.titleauthor;
 using Publicaciones.Application.Extentions;
 using Publicaciones.Domain.Entities;
 using Publicaciones.Domain.Repository;
+using Publicaciones.Infraestructure.Core;
 using Publicaciones.Infraestructure.Exceptions;
 using Publicaciones.Infraestructure.Interface;
+using Publicaciones.Infraestructure.Repositories;
 using System;
 
 namespace Publicaciones.Application.Service
@@ -29,7 +31,7 @@ namespace Publicaciones.Application.Service
 
             try
             {
-                result.Data = this.TitleAuthorRepository.GettitleAuthor();
+                result.Data = this.TitleAuthorRepository.GetTitleAuthors();
             }
             catch (titleAuthorException dex)
             {
@@ -48,7 +50,7 @@ namespace Publicaciones.Application.Service
             return result;
         }
 
-        public ServiceResult GetByau_id(string au_id)
+        public ServiceResult GetByau_id(int au_id)
         {
             ServiceResult result = new ServiceResult();
 
@@ -170,7 +172,7 @@ namespace Publicaciones.Application.Service
 
                 if (string.IsNullOrEmpty(model.title_id))
                 {
-                    result.Message = "El nombre del autor es requerido.";
+                    result.Message = "El nombre del titleautor es requerido.";
                     result.Success = false;
                     return result;
                 }
@@ -203,9 +205,9 @@ namespace Publicaciones.Application.Service
                 return result;
             }
 
-        ServiceResult IBaseService<TitleAuthorAddDto, titleAuthorUpdateDto, titleAuthorRemoveDto>.Save(TitleAuthorAddDto model)
-        {
-            throw new NotImplementedException();
-        }
+        //ServiceResult IBaseService<TitleAuthorAddDto, titleAuthorUpdateDto, titleAuthorRemoveDto>.Save(TitleAuthorAddDto model)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
