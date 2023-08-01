@@ -53,6 +53,7 @@ namespace Publicaciones.Application.Extentions
         {
             ServiceResult result = new ServiceResult();
 
+
             if (string.IsNullOrEmpty(model.au_id))
             {
                 result.Message = "El id del autor es requerido.";
@@ -111,30 +112,30 @@ namespace Publicaciones.Application.Extentions
 
             if (string.IsNullOrEmpty(model.zip))
             {
-                  result.Message = "El codigo del autor es requerido.";
-                  result.Success = false;
-                  return result;
+                result.Message = "El codigo del autor es requerido.";
+                result.Success = false;
+                return result;
             }
 
             if (model.zip.Length > 50)
             {
-                  result.Message = "El codigo del autor tiene una logitud invalida.";
-                  result.Success = false;
-                  return result;
+                result.Message = "El codigo del autor tiene una logitud invalida.";
+                result.Success = false;
+                return result;
             }
 
             if (string.IsNullOrEmpty(model.phone))
             {
-                 result.Message = "El telefono del autor es requerido.";
-                 result.Success = false;
-                 return result;
+                result.Message = "El telefono del autor es requerido.";
+                result.Success = false;
+                return result;
             }
 
             if (model.phone.Length > 50)
             {
-                  result.Message = "El telefono del autor tiene una logitud invalida.";
-                  result.Success = false;
-                  return result;
+                result.Message = "El telefono del autor tiene una logitud invalida.";
+                result.Success = false;
+                return result;
             }
 
             if (string.IsNullOrEmpty(model.state))
