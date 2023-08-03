@@ -12,6 +12,7 @@ namespace Publicaciones.Infraestructure.Context
         public PublicacionesContext(DbContextOptions<PublicacionesContext> options)
             : base(options)
         {
+
         }
 
         public DbSet<titleauthor> titleauthor { get; set; }

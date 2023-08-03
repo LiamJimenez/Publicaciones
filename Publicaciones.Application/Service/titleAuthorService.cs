@@ -50,7 +50,7 @@ namespace Publicaciones.Application.Service
             return result;
         }
 
-        public ServiceResult GetByau_id(int au_id)
+        public ServiceResult GetByau_id(string au_id)
         {
             ServiceResult result = new ServiceResult();
 

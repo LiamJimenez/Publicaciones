@@ -27,7 +27,7 @@ namespace Publicaciones.Domain.Repository
             throw new NotImplementedException();
         }
 
-        public titleauthorDa GetEntity(int id)
+        public titleauthorDa GetEntity(string au_id)
         {
             throw new NotImplementedException();
         }

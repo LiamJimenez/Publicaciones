@@ -45,7 +45,7 @@ namespace Publicaciones.Application.Extentions
             //    return result;
             //}
 
-            if (model.au_id > 50)
+            if (string.IsNullOrEmpty(model.au_id))
             {
                 result.Message = "El id del titleAuthor tiene la logitud invalida.";
                 result.Success = false;
@@ -89,7 +89,7 @@ namespace Publicaciones.Application.Extentions
 
             if (model.royaltyper > 50)
             {
-                result.Message = "La ciudad del autor tiene la logitud invalida.";
+                result.Message = "La ciudad del titleautor tiene la logitud invalida.";
                 result.Success = false;
                 return result;
             }

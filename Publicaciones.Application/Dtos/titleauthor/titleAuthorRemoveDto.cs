@@ -6,7 +6,7 @@ namespace Publicaciones.Application.Dtos.titleauthor
 {
     public class titleAuthorRemoveDto : DtoBase
     {
-        public int au_id { get; set; }
+        public string? au_id { get; set; }
         public bool Deleted { get; set; }
 
     }

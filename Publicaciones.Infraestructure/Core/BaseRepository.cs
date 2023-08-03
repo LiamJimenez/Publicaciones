@@ -62,9 +62,9 @@ namespace Publicaciones.Infraestructure.Core
             this.publicaciones.SaveChanges();
         }
 
-        public TEntity GetEntity(int id)
-        {
-            throw new NotImplementedException();
-        }
+        //public TEntity GetEntity(int id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
