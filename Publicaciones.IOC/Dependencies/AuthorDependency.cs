@@ -13,7 +13,9 @@ namespace Publicaciones.IOC.Dependencies
         public static void AddAuthorsDependency(this IServiceCollection services)
         {
             services.AddScoped<IAuthorsRepository, AuthorsRepository>();
-            services.AddTransient<IAuthorsRepository, AuthorsRepository>();
+            services.AddTransient<IAuthorsService, IAuthorsService>();
+            
+
         }
     }
 }

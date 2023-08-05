@@ -5,7 +5,7 @@ using Publicaciones.Application.Dtos.Authors;
 using Publicaciones.web.Models.Responses;
 using System.Text;
 
-namespace Publicaciones.Web.Controllers
+namespace Publicaciones.web.Controllers
 {
     public class AuthorsController : Controller
     {

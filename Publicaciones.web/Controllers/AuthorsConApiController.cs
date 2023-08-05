@@ -6,7 +6,7 @@ using Publicaciones.Application.Dtos.Authors;
 using Publicaciones.web.Models.Responses;
 using System.Text;
 
-namespace School.Web.Controllers
+namespace School.web.Controllers
 {
     public class AuthorsConApiController : Controller
     {
